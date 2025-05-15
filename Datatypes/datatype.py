@@ -24,15 +24,19 @@ java_version = 1.8
 # print(print)
 
 my_name="narendra"
-print(my_name) # narendra letters , numbers,_
+print(my_name) 
+    # narendra letters , numbers,_
 
 
 # my_ name = "narendra"  #dont give spaces 
 # 4x56=22.6  -- Do not start with number 
 
 x=10
-print(x) # 10 case sensitive 
+print(x) 
+     # 10 case sensitive 
 X=11 
-print(X) # 11
+print(X)
+     # 11
 
-_x=10 # can start with _ not with number
+_x=10 
+   # can start with _ not with number

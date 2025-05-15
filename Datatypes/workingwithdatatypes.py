@@ -4,10 +4,14 @@
 # # # number data types 
 # # # int float complex
 # # x=3;y=4.6;z=3+4j
-# # # print(x,y,z)  # 3 4.6 (3+4j) 
-# # print(x,type(x)) # 3 <class 'int'>
-# # print(y,type(y)) # 4.6 <class 'float'>
-# # print(z,type(z)) # (3+4j) <class 'complex'>
+# # # print(x,y,z)  
+    # 3 4.6 (3+4j) 
+# # print(x,type(x)) 
+   # 3 <class 'int'>
+# # print(y,type(y)) 
+        # 4.6 <class 'float'>
+# # print(z,type(z)) 
+      # (3+4j) <class 'complex'>
 
 # # # string data types
 
@@ -15,7 +19,8 @@
 # # print(my_name) # narendra
 
 # # # Ian_name=python #
-# # # print(Ian_name) #  NameError: name 'python' is not defined
+# # # print(Ian_name)
+      #  NameError: name 'python' is not defined
 
 
 # # my_name="x"
@@ -33,24 +38,29 @@
 # # # # 
 
 # # my_value="True"
-# # print(my_value,type(my_value)) # True <class 'str'>
+# # print(my_value,type(my_value))
+    # True <class 'str'>
 
 
 
 # ########## CONVERSION of data types
 # # int to string
 # x=56
-# print(x,type(x)) # 56 <class 'int'>
+# print(x,type(x))
+      # 56 <class 'int'>
 
 # y=str(x)
-# print(y,type(y)) # 56 <class 'str'>
+# print(y,type(y)) 
+     # 56 <class 'str'>
 # #######################################
 
 # # int to bool
 # p=0
-# print(p,type(p)) # 0 <class 'int'>
+# print(p,type(p)) 
+      # 0 <class 'int'>
 # q=bool(p)
-# print(q,type(q)) # False <class 'bool'>
+# print(q,type(q))
+       # False <class 'bool'>
 
 
 
@@ -58,10 +68,12 @@
 
 # x="3.2.1.5"
 
-# print(int(x)) # value Error 
+# print(int(x)) 
+     # value Error 
 
 # x="45"
-# print(int(X)) # 45
+# print(int(X)) 
+      # 45
 
 
 ###########################33
@@ -77,7 +89,8 @@ z="Narendra"
 print(bool(z)) # True 
 
 
-print(bool(0)) # False
+print(bool(0)) 
+       # False
 print(bool("")) # False
 print(bool([])) # False
 print(type([])) # List 
