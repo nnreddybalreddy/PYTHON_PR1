@@ -95,6 +95,45 @@
 # print(my_str.zfill(10))
 # # 0000Python
 
+# my_str="Python"
+
+# print(my_str.count('p'))
+# # 0
+
+# print(my_str.count("P"))
+# # 1
+# my_str="Python is very easy is a is"
+# print(my_str.count("easy"))
+#  # 1
+
+# print(my_str.index("easy"))
+# # 15
+# print(my_str.index("is",2))
+# # 7
+# print(my_str.index("is",17))
+# #20
+# # print(my_str.index("is",28))
+# #  # ValueError
+# print(my_str.find("is",28)) 
+#  # -1
+# java_version="java_version 1.6"
+# print(java_version.find("java"))
+# # 0
+
+import os 
+my_string="python programming"
+
+size=os.get_terminal_size().columns
+
+
+print(my_string.center(size))
+print(my_string.rjust(size))
+print(my_string.ljust(size))
+
+
+
+
+
 
 
 
