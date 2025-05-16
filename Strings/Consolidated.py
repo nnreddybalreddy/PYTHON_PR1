@@ -95,6 +95,12 @@
 # print(my_str.zfill(10))
 # # 0000Python
 
+
+
+my_str="   Python    "
+print(my_str.strip())
+
+
 # my_str="Python"
 
 # print(my_str.count('p'))
