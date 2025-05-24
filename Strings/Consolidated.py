@@ -97,17 +97,17 @@
 
 
 
-my_str="   Python    "
-print(my_str.strip())
+# my_str="   Python    "
+# print(my_str.strip())
 
-x="pythonyyyy"
+# x="pythonyyyy"
 
-print(x.lstrip('p').rstrip('y'))
- #ython
+# print(x.lstrip('p').rstrip('y'))
+#  #ython
 
-x="Python is easy"
-print(x.split())
- # ["Python", "is", "easy"]
+# x="Python is easy"
+# print(x.split())
+#  # ["Python", "is", "easy"]
 
 
 # my_str="Python"
@@ -135,15 +135,15 @@ print(x.split())
 # print(java_version.find("java"))
 # # 0
 
-# import os 
-# my_string="python programming"
+import os 
+my_string="python programming"
 
-# size=os.get_terminal_size().columns
+size=os.get_terminal_size().columns
 
 
-# print(my_string.center(size))
-# print(my_string.rjust(size))
-# print(my_string.ljust(size))
+print(my_string.center(size).title())
+print(my_string.rjust(size))
+print(my_string.ljust(size))
 
 
 
