@@ -1,0 +1,273 @@
+Exceptional Handling:
+
+  Syntax Error: Wrong syntax in the code. It leads to termination of the program
+      print(a) --- Without declaring the variable 'a'.
+
+    if(a>5)  #  : at the end
+       print(a) # SyntaxError: invalid syntax	
+	   
+	   
+   Exceptional Error: sytantically correct but code resulted in error. It does not stop the execution,but changes normal flow of the program.
+                       These are logical errors.
+					   
+					   
+    try:
+
+
+    except:
+
+     a/b==8/0 --> ZeroDivisionError: division by zero
+
+  
+
+Prog1:
+  a=int(input("Enter the number1:"))
+b=int(input("Enter the number 2"))
+
+
+try:
+    div=a/b
+    print('The division is :',div)
+except:
+    print("Exception occured")      # 8/0  Exception occured  
+	
+	
+	
+	Prog2: Handing Base exceptions
+	
+	  a=int(input("Enter the number1:"))
+      b=int(input("Enter the number 2"))
+      lst=[10,20,30]
+
+try:
+    div=a/b
+    print('The division is :',div)
+    print("List 3rd index:",lst[3])
+	#print("List 3rd index:",lst[2])
+	#print(n)
+except Exception as e:                     #Exceptional Base class 
+    print("Exception occured",e.__class__) # Exception occured <class 'IndexError'>
+	#print("Divisional error: ",e.__class__) # Exception occured <class 'ZeroDivisionError'>
+	#print("Divisional error: ",e.__class__) # Exception occured <class 'NameError'>
+	
+Handling specific Exceptions:
+
+  a=int(input("Enter the number1:"))
+b=int(input("Enter the number 2:"))
+lst=[10,20,30]
+
+
+try:
+    div=a/b
+    print('The division is :',div)
+    print("List 3rd index:",lst[2])
+    print(n)
+except NameError:
+    print("Name error handled") # print(n) . Undefined n is handled here
+    
+except ZeroDivisionError:
+    print("Zero division error handled") #8/0 . Zero division error handled 
+
+except IndexError:
+    print("Index error  handled") #lst[3] . Index error handled 
+    
+except Exception as e:
+    print("Exception occured",e.__class__) #Base class all exceptions 
+	
+	
+	
+	try:
+	
+	
+	exception:
+	
+	else: #NO exceptions occured its prints. If exception skip the else
+	
+	finally: #Even it exception or not , finally will must 
+	
+	
+	a=int(input("Enter the number 1:"))
+b=int(input("Enter the number 2:"))
+lst=[2,4,6]
+n=100
+try:
+    div=a/b
+    print("Div:",div)
+    print("lst 3rd Index:",lst[2])
+    print(n)
+    
+except ZeroDivisionError:
+    print("Zero division error occured")
+
+except IndexError:
+    print("Index error occured")
+    
+except NameError:
+    print("Name error occured")
+    
+except Exception as e:
+    print("Exception occured:",e.__class__)
+else:
+    print("No exception occured") #If no exception . 8/4 , Then else part printed  . No exception occured
+	
+	
+	
+	
+	Prog 4:
+	 a=int(input("Enter the number 1:"))
+b=int(input("Enter the number 2:"))
+lst=[2,4,6]
+n=100
+try:
+    div=a/b
+    print("Div:",div)
+    print("lst 3rd Index:",lst[2])
+    print(n)
+    
+except ZeroDivisionError:
+    print("Zero division error occured") #  8/0. Zero division error occured
+
+except IndexError:
+    print("Index error occured")
+    
+except NameError:
+    print("Name error occured")
+    
+except Exception as e:
+    print("Exception occured:",e.__class__)
+else:
+    print("No exception occured") # No exception occured
+    
+finally:
+    print("This is always executed ")  # This is always executed . for exception also this is will executed 
+
+
+File Handling:
+  Files are stored in HD and for permanent storage. 
+ FIle operations:
+   1. opening file : open(file_name,mode)
+   2. R/W file   
+   3. Closing file
+
+ f=open("file_name",mode) -- f is file handler. It is used for R/W or close
+
+ Mode : 'r' : Read : -- Open for reading . Error does not exist
+        'a' : Append : Open for appending. If file does not exist,it creates. Append at the end.
+        'w' : Write. Erase and write the new contents. If file does not exist,it creates.
+          
+          'x' : create the new file. Returns if file does not exist.
+          r+ : Read/Write
+        
+            t: Text mode
+         b : Binary mode
+
+ Closing file:
+              f.close()
+
+
+ Read data from files:
+
+ 1.txt:
+      Narendra here
+      Surendra here
+      Manu here
+      Mahi here
+      Archana here
+       
+f=open('1.txt','w')
+
+data=f.read() # Read entire file
+
+print(data)
+
+   f.read(5) # Naren-- First 5 characters 
+ 
+ data1=f.read(5)  #Naren
+ data2=f.read(5)  #dra h
+
+ data=f.read() #Remaining lines will print.
+
+
+
+print(f.readline(),end=' ') #Narendra here
+print(f.readline(),end=' ') #Surendra here
+ 
+
+f.close()
+
+
+ Prog2:
+ 
+for line in f:
+    print(line,end=' ') 
+ 
+        # Narendra here
+        # Surendra here
+               --------
+
+
+ Write and Append:
+
+     f=open('1.txt','w')
+
+f.write("Something better than nothing  ")#Something better than nothing
+
+f.close()
+
+f=open('1.txt','a')
+f.write("Append at the end ") #Append at the end
+f.close()
+
+f=open('1.txt','r')
+print(f.read())
+
+
+Prog3:
+  
+f=open('1.txt','w')
+
+f.write("Something better than nothing  ")
+
+f.close()
+
+f=open('1.txt','w')
+
+f.write("Something better than nothing overwrite   ") # Something better than nothing overwrite
+
+f.close()
+
+Prog:
+ f=open('2.txt','w') #open('2.txt','a')
+print(f)   #FIle does not exist, it will create for 'w' mode.
+
+# open('2.txt','x')  #create the EMPTY file.
+
+ File Deletion:
+ 
+import os 
+'''
+File: FILENAME:file_name
+Author: author
+Description: 
+'''
+if os.path.exists("C:\1.txt"):
+    os.remove('1.txt')
+    print("File Removed")
+else:
+    print("File does not exists ")
+
+ 
+
+ For deleting folders , make sure every file must be deleted in that folder.
+  os.rmdir("C:\Python")
+
+ 
+
+
+
+  	
+
+    
+	   
+	   
+	
