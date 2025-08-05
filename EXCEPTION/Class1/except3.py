@@ -23,4 +23,4 @@ else:
     print("No exception occured") # No exception occured
     
 finally:
-    print("This is always executed ")  # This is always executed . for exception also this is will executed 
+    print("This is always executed ")  # This is always executed . for exception also this is will executed mage: 

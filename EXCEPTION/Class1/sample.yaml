@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-demo-deploy
+  labels:
+    app: nginx
+    environment: production
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      environment: production
+    matchExpressions:
+      - {key: app,operator: Exists}
+      - {key: type,operator: DoesNotExist}
+
+  template:
+    metadata:
+      name: nginx-demo 
+      labels: 
+        app: nginx
+        environment: production
+        release: v1.2
+    spec:    
+      volumes:
+        - name: shared-volume
+          emptyDir: {}                  
+      containers:
+        - name: container-write
+          image: alpine
+          command: ["bin/sh"]
+          args: ["-c","while true; do date >> /var/tmp/index.html; sleep 10; done"]
+          volumeMounts:
+            - name: shared-volume
+              mountPath: /var/tmp
+
+        - name: container-serve
+          image: nginx
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: shared-volume
+              mountPath: /usr/share/nginx/html  
+
+     
+
