@@ -1,0 +1,457 @@
+
+
+OOPS:
+  Python is object oriented programing language.
+  
+  Object has two characterstics:
+         Attributes
+		 Action
+		 
+	Human: Object 
+                Attributes: Name, age , Gender
+                Action     : Walking ,sleeping
+
+ Python:
+     Class:
+        Object 
+
+ class : Class is a blueprint of a object.
+ 
+   Blueprint of Home is class.  Consution of home based on blueprint of Home(Physical) is Obj.
+   
+   class className:
+       -------
+	   -------
+	   
+	   Ex: 
+	    
+    class Computer2:
+        pass
+
+
+
+ __init__:
+   The init function used to Initialize the each new instance of the class. Init is method.
+   
+   Creating the object to the class. class attributes are mutable.
+   
+   
+   Prog:
+   class Computer:                                             # OBJECT
+    color="Black" #class attributes 
+    
+    def __init__(self,computer,ram,cpu):                       #Attributes 
+        self.computer=computer  #Instance attributes
+        self.ram=ram
+        self.cpu=cpu
+    
+    def Description(self,hd): #Instance methods                #Action 
+        print("Com Config: Com Name:",self.computer,"Ram size:",self.ram,"cpu:",self.cpu) #Instance attributes so using self . Self for objects i.e c1 or c2
+        print('Hard Disk:',hd)  #Instance method. so not to use self. 
+        
+c1=Computer('Dell',8,'I7')  # Object creation
+c2=Computer("Lenova",16,'I5') #Object creation 
+
+print("Before------------")
+print("c1 attributes:",c1.computer,c1.ram,c1.cpu) # Dell 8 17
+print("c2 attributes:",c2.computer,c2.ram,c2.cpu) # Lenova,16 I5
+
+print("After-------------------")
+c1.computer="Inspiron"
+c2.ram=24
+
+print("c1 attributes:",c1.computer,c1.ram,c1.cpu)  #Inspiron 8 17 
+print("c2 attributes:",c2.computer,c2.ram,c2.cpu)  #Lenova,24,I5
+
+
+c1.Description(500)   #Com Config: Com Name: Inspiron Ram size: 8 cpu: I7  ard Disk: 500
+c2.Description(1000)  #Com Config: Com Name: Lenova Ram size: 24 cpu: I5 and Hard Disk: 1000
+
+
+print("Afte class attriutes change----------")
+c1.color="Blue"
+
+print(c1.color,c2.color) #Blue Black  . c1 color changed but c2 ojbect color not changed. 
+
+
+
+
+
+Method Overloading:
+  Function with Object have many forms.
+
+class Tomoto:
+    def Type(self):
+        print("Veg")
+    
+    def color(self):
+        print("Red")
+
+class Apple:
+    def Type(self):
+        print("Fruit")
+    
+    def color(self):
+        print("Red")
+        
+
+def Func(obj):
+    obj.Type()
+    obj.color()
+    
+Obj_Tomoto=Tomoto()
+Obj_Apple=Apple()
+
+Func(Obj_Tomoto) #
+Func(Obj_Apple) 
+
+
+
+
+
+
+
+
+Inheritance:
+   Inheritance allows us to define a class that inherits all the methods and properites from another class.
+
+    Base class (Attributes/Methods)  <---------------- Derived class (Attributes/Methods) . THe object can created in Derived class(Child) and access the methods /Attributes from base class.
+
+
+
+  class Base_Class:
+       Attributes
+       Methods
+
+  class Der_Class(Base_Class):
+        Attributes
+        Methods
+
+ Object creation in Derived class only. obj1=Der_Class(_). obj1 can access all the methods and attributes in Base class.
+
+
+ Prog1:
+  #Base Class
+
+class Calculation1:
+    def sum(self,a,b):
+        return a+b
+  
+ #Derived Class       
+class Calc(Calculation1):
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+        
+    def div(self,a,b):
+        return a/b
+        
+obj1=Calc(8,4)
+
+div=obj1.div(obj1.a,obj1.b) #Derived class accessing
+sum=obj1.sum(obj1.a,obj1.b) #Base class accessing 
+
+print("Div: ",div) #2.0
+ 
+print("Sum: ",sum) #12
+
+
+
+
+Prog2:
+  #Base Class1   ---- 
+
+class Calculation1:
+    def __init__(self,c,d):
+        self.c=c
+        self.d=d
+    def sum(self,a,b):
+        return a+b
+  
+ #Derived Class       
+class Calc(Calculation1):
+    def __init__(self,a,b,c,d):
+        self.a=a
+        self.b=b
+        super().__init__(c,d)  #This is for to send the parameter to __init method of base class. 
+        
+    def div(self,a,b):
+        return a/b
+        
+obj1=Calc(8,4,22,11)
+
+div=obj1.div(obj1.a,obj1.b)
+sum=obj1.sum(obj1.c,obj1.d) #The calculation is based on parameters passed to base class through Derived class. 
+
+print("Div: ",div)
+print("Sum: ",sum)
+
+
+
+
+
+Multiple Inheritance:
+ #Base Class 1. Multiple Inheritance. 
+
+ Base class1: mother   <--------------------Child
+ Base class2:  Father  -------------------
+
+class Mother():
+    mother_name=' '
+    def print_mother(self):
+        print("Mother name: ",self.mother_name)
+    
+#Base class 2        
+class Father():
+    father_name=' '
+    def print_father(self):
+        print("Father name: ",self.father_name) 
+        
+#Child class
+
+class child(Mother,Father):
+    def print_parent(self):
+        print("Child class prints-----------")
+        print("Father :",self.father_name)
+        print("Mother :",self.mother_name)
+     
+        
+obj1=child()        
+obj1.mother_name='sita'#Mother name:  sita
+obj1.father_name='Ram' #Father name:  Ram
+
+print("Base class prints ------------------ ")
+
+obj1.print_mother() #Father : Ram
+obj1.print_father() #Mother : sita
+
+
+
+obj1.print_parent()
+
+
+
+
+
+
+MultiLevel Inheritance:  
+  Base1                       <-- Base 2  <------------ Base 3  <------------- Derived
+  Grand father ----              Father(GP)                Mother                 Child (Father
+
+
+  #Base Class 1. Multiple Inheritance. 
+class Grandparent:
+    Grandparent_name=' '
+    def gp_name(self):
+        print("Gp name:",self.Grandparent_name)
+
+#Base Class 2: 
+class Mother:
+    mother_name=' '
+    def print_mother(self):
+        print("Mother name: ",self.mother_name)
+    
+#Base class 3        
+class Father(Grandparent):
+    father_name=' '
+    def print_father(self):
+        print("Father name: ",self.father_name) 
+        
+#Child class
+
+class child(Mother,Father):
+    def print_parent(self):
+        print("Child class prints-----------")
+        print("Father :",self.father_name)
+        print("Mother :",self.mother_name)
+     
+        
+obj1=child()        
+obj1.mother_name='sita'
+obj1.father_name='Ram'
+obj1.Grandparent_name='Ravi'
+
+print("Base class prints ------------------ ")
+
+obj1.print_mother()
+obj1.print_father()
+obj1.print_parent()
+obj1.gp_name()
+        
+        
+        
+        Hierachical Inheritance:
+             Base Class <---- Derived class 1
+                        <----- Derived class 2
+
+  
+
+Multiple inheritance invovles multiple inheritance taking place in a single program.
+
+  GrandFather-->Father ----------Single Level Inheritance
+  GP ---> Father --->Child        -----------------> Multilevel Inheritance
+
+  Mother/Father ---->  Child -- Multiple Inheritance
+  Gp-->Mother/Father --> Child ----> Hybrid Inheritance 
+
+
+
+ Single :  Base / Derived
+ Multiple : Base 1 /Base 2 -- Derived
+
+ Multilevel : Base 1---> Base2--->Base3---> Derived
+ Hierarchical :  Base 1---> Derived 1/Derived 2
+ Hybrd: Mix of above all.
+
+
+
+
+
+
+
+ Poly Morphism :
+   Many Forms
+
+    Operator and Method forms
+
+        Operator: Operator overloading 
+            print("Simple addition:",2+3)  #Simple addition: 5
+            print ("string addition",'a'+'b') #string addition ab
+            print('2'+'3') #23 is  a string concationation
+            print('ab'+'cd')  #abcd - 
+           print(2*3) #6
+          print('a' * 3) #aaa
+
+       Operator is + same but different forms. Poly Morphism
+
+  Overloading:
+            Operator overloading
+            Method overloading
+
+  Overriding :
+  class Table():
+   def  __init__(self,fare):
+        self.fare=fare
+    
+
+   t1=Table(50)    
+   t2=Table(60)
+
+    print(t1+t2) #  TypeError: unsupported operand type(s) for +: 'Table' and 'Table'
+
+   print("Real meaning:",3+4) #7
+
+Prog1:
+  class Table:
+    def __init__(self,fare):
+        self.fare=fare
+    
+    def __add__(self,other1):
+        #return self.fare + other1.fare #110
+        return self.fare *  other1.fare #3000. We can have our own logic for operator
+    
+    def __lt__(self,other):
+        return self.fare < other.fare
+        
+        
+
+t1=Table(50)
+t2=Table(60)
+
+
+print("Addition:",t1+t2)
+print("Real meaning:",3+4)
+print("Operator comparision:",t1<t2) #TRUE
+#print("Operator comparision:",t1<=t2) #TRUE.TypeError: '<=' not supported between instances of 'Table' and 'Table'
+
+
+Mehod overloading:
+  class Tomoto:
+    def Type(self):
+        print("Veg")
+    
+    def color(self):
+        print("Red")
+
+class Apple:
+    def Type(self):
+        print("Fruit")
+    
+    def color(self):
+        print("Red")
+        
+
+def Func(obj): #Function with obj have many forms.
+    obj.Type()
+    obj.color()
+    
+Obj_Tomoto=Tomoto()
+Obj_Apple=Apple()
+
+Func(Obj_Tomoto) #Veg , Red
+Func(Obj_Apple) #Fruit, Red
+
+
+
+Prog2:
+  
+class India():
+    def capital(self):
+        print("New Delhi")
+    def language(self):
+        print("Hindi , English")
+
+
+class USA():
+    def capital(self):
+        print("Washingon DC")
+    def language(self):
+        print("English")   
+        
+        
+obj_India=India()
+obj_USA=USA()
+
+for country in(obj_India,obj_USA): #Methods classes
+    country.capital()     #New Delhi  Hindi , English
+    country.language()    # Washingon DC    English . Methods classes overloading
+
+
+
+
+
+Method overriding:
+  class Bird():
+    def about(self):
+        print("They are diff types of birds")
+    
+    def fly(self):
+        print("Some birds can fly and some or not fly")
+
+class parrot(Bird):
+    def fly(self):
+        print("Parrot can fly")
+
+class penguin(Bird):
+    def fly(self):
+        print("Penguin cannot fly")
+        
+        
+obj_Bird=Bird()
+obj_parrot=parrot()
+obj_penguin=penguin()
+
+
+print('--------- Bird---------')
+obj_Bird.about() #They are diff types of birds
+obj_Bird.fly() #Some birds can fly and some or not fly
+
+print("parraot------------------")
+
+obj_parrot.about() #They are diff types of birds
+obj_parrot.fly() #Parrot can fly
+
+obj_penguin.about()#They are diff types of birds
+obj_penguin.fly() # Priority will given to Derived class. Penguin cannot fly
+   
+   
