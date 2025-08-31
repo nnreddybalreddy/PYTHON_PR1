@@ -135,15 +135,24 @@
 # print(java_version.find("java"))
 # # 0
 
-import os 
-my_string="python programming"
+# import os 
+# my_string="python programming"
 
-size=os.get_terminal_size().columns
+# size=os.get_terminal_size().columns
 
 
-print(my_string.center(size).title())
-print(my_string.rjust(size))
-print(my_string.ljust(size))
+# print(my_string.center(size).title())
+# print(my_string.rjust(size))
+# print(my_string.ljust(size))
+
+
+s="madam1"
+
+s1=s[::-1]
+
+if s==s1:
+    print("Palindrom")
+
 
 
 
