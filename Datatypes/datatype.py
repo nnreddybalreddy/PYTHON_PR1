@@ -17,11 +17,12 @@ del x
 #########################
 
 java_version = 1.8
-#  x$
-#   $s  not valid 
+# x$ not valids
+# $5  not valid 
 
-#print=2 
-# print(print)
+# print=2 
+# print(print) # TypeError: 'int' object is not callable
+
 
 my_name="narendra"
 print(my_name) 
@@ -40,3 +41,4 @@ print(X)
 
 _x=10 
    # can start with _ not with number
+   

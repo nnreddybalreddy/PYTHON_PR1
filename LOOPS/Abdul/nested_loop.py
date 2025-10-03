@@ -14,7 +14,7 @@
 #################33 2
 
 # #prime numbers 1-100
-# n=int(eval(input("Enter number")))
+n=int(eval(input("Enter number")))
 
 for i in range(1,n+1):
     count=0

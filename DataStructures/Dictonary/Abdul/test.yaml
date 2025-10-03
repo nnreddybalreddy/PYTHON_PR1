@@ -1,0 +1,21 @@
+- name: cond
+  hosts: web
+  become: yes
+  tasks:
+  - name: cond
+    ansible.builtin.command: id expense
+    ignore_erros: true
+    register: USER
+
+  - name: print
+    ansible.builtin.debug:
+      msg: "{{USER}}"
+
+  - name: id expense
+    ansible.builtin.command: useradd expense 
+    when: USER.rc != 0    
+
+
+
+
+

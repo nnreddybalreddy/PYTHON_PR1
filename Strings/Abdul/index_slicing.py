@@ -66,7 +66,7 @@ s1="Hello world"
 
 # print(s2[::-1])
 # # dlrow olleH
-
+s2="Hello world"
 print(s2[-3::-1])
 # row olleH
 

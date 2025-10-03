@@ -50,7 +50,7 @@ elif digit == 7:
     print("Seven")
 elif digit == 8:
     print("Eight")
-eklif digit == 9:
+elif digit == 9:
     print("Nine")
 else:
     print("Invalid digit. Please enter a digit between 0 and 9.")

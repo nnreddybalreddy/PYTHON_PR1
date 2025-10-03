@@ -44,7 +44,7 @@ print(s1.isidentifier())
 #False
 
 s2="abc1"
-print(s2.identifier())
+print(s2.isidentifier())
 #Valid variable name
 
 

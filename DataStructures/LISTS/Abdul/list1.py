@@ -33,10 +33,10 @@
 # #   6 5 4 2 3 2
 
 ##########Hetroenous
-# L1=[7,3.2,"john",True,5+6j]
-# for i in L1:
-#     print(i,end=' ')
-# # 7 3.2 john True (5+6j)    
+L1=[7,3.2,"john",True,5+6j]
+for i in L1:
+    print(i,end=' ')
+# 7 3.2 john True (5+6j)    
 
 # L1[3]=5
 # print(L1)

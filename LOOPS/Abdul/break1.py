@@ -4,7 +4,7 @@
 #     if i > 5:
 #         break
 #     print(i)
-
+# #1 2 3 4 5
 ####### 2
 #continue
 
@@ -16,6 +16,7 @@
 #     if i%3==0:
 #         continue
 #     print(i)
+#1 2 4 5 7 8 10    
 
 ####### while break 
 

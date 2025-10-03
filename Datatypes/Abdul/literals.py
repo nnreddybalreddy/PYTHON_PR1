@@ -6,8 +6,8 @@ print(b) # 252456789
 # c=358_
 # print(c) #SyntaxError: invalid token
 
-d=_789
-print(d)
+# d=_789
+# print(d)
 #NameError: name '_789' is not defined
 
 

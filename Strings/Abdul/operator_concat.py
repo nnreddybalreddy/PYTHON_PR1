@@ -40,6 +40,7 @@ s2="ABC"
 s1="software"
 s2="Hardware"
 
+print(s1>s2) #True
 # s1 > s2
 
 s1="python"
@@ -54,5 +55,5 @@ s2="inteer"
 
 s1="printer"
 s2="print"
-
-# s1>s2
+print(s1>s2)
+# s1>s2 --> TRUE

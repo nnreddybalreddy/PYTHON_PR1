@@ -47,10 +47,10 @@ Hello3
 
 s5='Clark\"s'
 
-s3="Clark's"
+# s3="Clark's"
 
-s3='Clark"s'
+# s3='Clark"s'
 
-print(s3)
+print(s5)
 
 

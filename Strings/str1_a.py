@@ -14,7 +14,7 @@
 # print(my_str3)
 
 ##################### 
-#Accessing string values
+# Accessing string values
 
 # my_str1=""
 # my_str2=" " # space is also a character
@@ -46,7 +46,7 @@
 #  #Python  (Original string is not change)
 
 
-# How to change or delete a string 
+# # How to change or delete a string 
 
 # my_str="Python"
 
@@ -56,7 +56,7 @@
 
 # print(my_str)
 
-# Lenght of string
+# # Lenght of string
 
 # my_str='Python'
 
@@ -66,12 +66,12 @@
 # print(my_str[-1])
 #   # n
 
-# my_str[0]="W"
- # TypeError: 'str' object does not support item assignment
+# # my_str[0]="W"
+# #  TypeError: 'str' object does not support item assignment
 
 
 
-########### Add or concatenate strings
+########## Add or concatenate strings
 # my_str1="Python"
 # my_str2="Programming"
 
@@ -81,7 +81,7 @@
 
 # my_str3=my_str1+" " + my_str2
 # print(my_str3)
-  # Python Programming
+#   # Python Programming
 
 
 

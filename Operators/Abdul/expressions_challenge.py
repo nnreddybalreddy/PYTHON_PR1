@@ -1,18 +1,20 @@
 # Area of traingle
 # area =1/2 * base * height
 
-# area=eval(input("Enter area of the triangle.......... "))
+# base=eval(input("Enter area of the triangle.......... "))
 # height=eval(input("Enter height of the triangle....... "))
 
-# base=(area*height)/2
+# aea=(base*height)/2
 
-# print("Base of the triangle is ....",base)
+# print("Area of the triangle is ....",area)
 
 # # output:
 # # $ python expressions_challenge.py
-# # Enter area of the triangle.......... 10
+# # Enter base of the triangle.......... 10
 # # Enter height of the triangle....... 5
-# # Base of the triangle is .... 25.0
+# # Area of the triangle is .... 25.0
+
+
 
 
 ################# 2
@@ -27,6 +29,8 @@
 # area=1/2* (a+b) *h
 # print("Area:",area)
 # #Area: 52.5
+
+
 
 ################### 3
 
@@ -51,9 +55,9 @@
 # kms to miles
 # 1 km = 0.621371 miles
 
-kilometers = 15
-miles = kilometers * 0.621371
-print("Miles:", miles)
+# kilometers = 15
+# miles = kilometers * 0.621371
+# print("Miles:", miles)
 
 # Miles: 9.320565
 
@@ -67,9 +71,12 @@ u=4
 v=6
 a=3
 
-d=(v*v - u*u) / (2 * a)  # assuming a = -5 for deceleration
-print("Displacement:", d)
-# Displacement: 3.3333333333333335
+# d=(v*v - u*u) / (2 * a)  # assuming a = -5 for deceleration
+# print("Displacement:", d)
+# # Displacement: 3.3333333333333335
+
+d=((v*v)-(u*u))/ (2*a)
+print(d)
 
 # Surace area of cubiod
 # surface_area = 2 * (length * breadth + breadth * height + height * length)
@@ -77,7 +84,9 @@ print("Displacement:", d)
 length  = 10  
 breadth = 5  
 height  = 7
-surface_area = 2 * (length * breadth + breadth * height + height * length)
+# surface_area = 2 * (length * breadth + breadth * height + height * length)
+
+surface_area=2 * ((length*breadth) + (breadth * height) + (height * length))
 print("Surface area of the cuboid is:", surface_area)
 
 # 310

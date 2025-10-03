@@ -114,7 +114,7 @@ dic1={"fruit":"banana",'animal':"monkey",1:"one","two":2}
 
 dic1={"fruit":"banana",'animal':"monkey",1:"one","two":2}
 print(dic1)
-
+    
 #{'fruit': 'banana', 'animal': 'monkey', 1: 'one', 'two': 2} --> Order is same
 
 

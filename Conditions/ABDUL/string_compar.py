@@ -1,8 +1,10 @@
 s1="software"
 s2="Hardware"
 
-print(s1 > s1)
-# False, because 's' is not greater than 'H'
+print(s1 > s2)
+# True, because 's' is greater than 'H'
+print(ord('s'),ord('H'))
+#115 72
 
 s1="python"
 s2="pycharm"

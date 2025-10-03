@@ -51,7 +51,7 @@ print(s1.rindex('o',0,15))
 #7
 
 
-count(sub,start,end)
+# count(sub,start,end)
 print(s1.count('o'))
 #3 
 

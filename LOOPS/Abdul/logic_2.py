@@ -10,33 +10,33 @@
 # # 3 * 2= 6
 # #----------
 
-# digits of a number 
+
+# # digits of a number 
 n=2546 
-# r = 2546 % 10 
-# n = 2546 //10 
+# # r = 2546 % 10 
+# # n = 2546 //10 
 sum=0 
 
-while n>0:
-    r = n % 10  
-    # print(r)
-    sum=sum+r
-    n = n // 10 (inteer division)
+# while n>0:
+#     r = n % 10  
+#     # print(r)
+#     sum=sum+r
+#     n = n // 10 #(inteer division)
 
-print(sum)
 
-##############
-# # count and sum of digits of a number
+# ##############
+# # # count and sum of digits of a number
 
-i=0
-n=2546
+# i=0
+# n=2546
 
-while n>0:
-    i=i+1
-    n = n // 10  # (inteer division)
+# while n>0:
+#     i=i+1
+#     n = n // 10  # (inteer division)
 
-print(i)
+# print(i)
 
-######### sum of digits 
+# ######### sum of digits 
 
 
 

@@ -12,7 +12,7 @@
 
 # res=5**3
 
-# print(res) @125
+# print(res) # 125
 
 # res=7%2
 # print(res) #1

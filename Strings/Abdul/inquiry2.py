@@ -19,14 +19,15 @@
 # ######### 
 # #isnumeric
 
-# s1="35742"
-# print(s1.isnumeric())
-# #True
+s1="35742"
+print(s1.isnumeric())
+#True
 
 # isascii
 
 d="Abc"
-print(d.casefold())
+print(d.isascii()) #True
+print(d.casefold()) # abc
 
 
 

@@ -1,0 +1,4 @@
+Arith and Assignment
+Comparision
+Identiy and membership
+Logical operators

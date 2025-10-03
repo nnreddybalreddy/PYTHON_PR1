@@ -1,16 +1,16 @@
-# print(5 and 10)
-# # 10 
-# print(5 and 0)
-# # 0 
+print(5 and 10)
+# 10 
+print(5 and 0)
+# 0 
 
-# print(0 and 10)
-# # 0
+print(0 and 10)
+# 0
 
-# print(5 or 10)
-# # 5
+print(5 or 10)
+# 5
 
-# print(0 or 10)
-# # 10
+print(0 or 10)
+# 10
 
 a=10
 b=5

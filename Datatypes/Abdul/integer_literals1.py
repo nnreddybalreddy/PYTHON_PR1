@@ -1,17 +1,22 @@
 # a=10
 # print(a)
+# #10
 # b=0b1010
 # print(b)
+# #10
 # c=0o12
 # print(c)
+# #10
 # d=0xA
 # print(d)
+# #10
 # C1=0b1010+15j 
 
 # print(C1)
+# #10+15j
 
-########### 
-# Base conversion functions
+# ########### 
+# # Base conversion functions
 
 print(bin(10))
 #0b1010

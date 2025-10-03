@@ -13,8 +13,10 @@
 ########## max / min of n numbers
 n=5 
 i=0
-min=float('-inf')  # Initialize max to the smallest possible value  
-max=float('inf')  # Initialize min to the largest possible value
+max=float('-inf')  # Initialize max to the smallest possible value  
+min=float('inf')  # Initialize min to the largest possible value
+
+
 
 while i<n:
     i=i+1
