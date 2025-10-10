@@ -4,7 +4,7 @@
 # print(bool(tpl1),bool(tpl2))
 
 # tpl1=(2,3,[4,5,6],10)
-# tpl1[2][2]=60
+# tpl1[2][2]=6
 
 # print(tpl1)
 

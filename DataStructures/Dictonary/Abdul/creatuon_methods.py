@@ -4,12 +4,12 @@
 
 # # #iterable pairs
 # # d1={1:"one",2:"two",3:"three",4:"four"}
-
-# # d2=[(1,"one"),(2,"two"),(3,"three"),(4,"four")]
+d2=[(1,"one"),(2,"two"),(3,"three"),(4,"four")]
 # # #list of tuples
 
-# # dict1=dict([(1,"one"),(2,"two"),(3,"three"),(4,"four")])
-# # print(d1)
+dict1=dict(d2)
+#dict1=dict([(1,"one"),(2,"two"),(3,"three"),(4,"four")])
+print(dict1)
 # # # {1: 'one', 2: 'two', 3: 'three', 4: 'four'}
 
 # #zip function

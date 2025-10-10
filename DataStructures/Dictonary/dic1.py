@@ -42,7 +42,7 @@ dic1={"fruit":"banana",'animal':"monkey",1:"one","two":2}
 # #2122890898384 2122890898384
 
 # dic3=dic1.copy()
-# print(id(dic1),id(dic3))
+# print(id(dic1),id(dic3))   
 
 # # 2717727419344 2717727419416
 
@@ -67,6 +67,7 @@ dic1={"fruit":"banana",'animal':"monkey",1:"one","two":2}
 ######  popitem ###########################
 
 # print(dic1)
+
 # #{'fruit': 'banana', 'animal': 'monkey', 1: 'one', 'two': 2}
 # print(dic1.popitem())
 # #('two', 2)

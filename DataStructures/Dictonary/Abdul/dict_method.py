@@ -8,6 +8,8 @@
 d1={1:"one",2:"two",3:"three",4:"four"}
 d2={5:"five"}
 
+
+
 d1.update(d2)
 print(d1)
 # {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
