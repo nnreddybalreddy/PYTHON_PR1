@@ -56,16 +56,23 @@
 
 
 # main()
+#########
+#   Enter a number: 6
+#   Result: 60
+################
+# def add(p, q):
+#     return p*q
 
-def add(p, q):
-    return p*q
 
+# def main():
+#     num=eval(input("Enter a number: "))
+#     result=add(num, 10)
+#     print(f'Result: {result}')
 
-def main():
-    num=eval(input("Enter a number: "))
-    result=add(num, 10)
-    print(f'Result: {result}')
+# main() 
 
-main() 
-
+###############
+# Enter a number: 7
+# Result: 70
+####################
 

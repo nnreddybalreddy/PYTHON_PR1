@@ -16,3 +16,10 @@ def new_concepts():
 welcome_msg()
 known_concepts()   
 new_concepts()
+
+# Welcme to python scripting
+# Python is very easy to learn
+# Now we are good with basics
+# We are about to start function concepts in  python
+# Function are very easy in python
+# Now we are writing simple functions

@@ -40,7 +40,7 @@
 # myfunction1()
 # myfunction2()
 
-######## output ##########
+####### output ##########
 # x from function1 10
 # x from function2 10
 

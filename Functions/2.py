@@ -6,6 +6,15 @@
 # display()
 # print("Now we called display function two lines")
 # display()
+###########################
+#First line
+#Second line
+#First line
+#Second line
+#Now we called display function two lines
+#First line
+#Second line
+##################################
 
 
 # def display():
@@ -17,16 +26,16 @@
 # print("Display function called again")
 # display()    
 ##################
-# display()
-# def display():
-#     print("Welcome to function concept")
-#     print("Simple way to define your function")
-#     return None
+display()
+def display():
+    print("Welcome to function concept")
+    print("Simple way to define your function")
+    return None
 
 
-# NameError: name 'display' is not defined
+NameError: name 'display' is not defined
 
-# display()
+display()
 
 #######################
 

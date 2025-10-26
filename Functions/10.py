@@ -36,11 +36,19 @@
 
 # display(56,q=10,r=20)
 
-# {'q': 10, 'r': 20}
+#
+   #   56
+   #  {'q': 10, 'r': 20}
+#
+
+
 
 def display(**karg):
     for each in karg:
         print(each)    
 
 display(a=1, b=2, c=3)
+#a
+#b
+#c
 

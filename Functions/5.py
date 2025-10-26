@@ -1,12 +1,12 @@
-# def get_result():
-#     result=num*10
-#     print(f'Result: {result}')
-#     return None
+def get_result():
+    result=num*10
+    print(f'Result: {result}')
+    return None
 
-# num=eval(input("Enter a number: "))    
-# get_result()
+num=eval(input("Enter a number: "))    
+get_result()
 
-#output:
+# output:
 #  Enter a number: 6
 #  Result: 60
 
@@ -96,25 +96,25 @@
 # print(f'Result: {result}')
 
 
-def add(p,q):
-    print(f'Addition: {p+q}')
-    return None
+# def add(p,q):
+#     print(f'Addition: {p+q}')
+#     return None
 
-def subtract(m,n):
-    print(f'Subtraction: {m-n}')
-    return None 
+# def subtract(m,n):
+#     print(f'Subtraction: {m-n}')
+#     return None 
 
 
-def main():
-    a=eval(input("Enter a number: "))
-    b=eval(input("Enter a number: "))
-    add(a,b)  # 11 
-    subtract(a,b) # -1
-    subtract(b,a) # 1 --> Positional argument 
-    subtract(10,5) # 5 --> Positional argument
-    return None 
+# def main():
+#     a=eval(input("Enter a number: "))
+#     b=eval(input("Enter a number: "))
+#     add(a,b)  # 11 
+#     subtract(a,b) # -1
+#     subtract(b,a) # 1 --> Positional argument 
+#     subtract(10,5) # 5 --> Positional argument
+#     return None 
 
-main()     #5,6 
+# main()     #5,6 
 
 
 

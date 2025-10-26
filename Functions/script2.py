@@ -16,10 +16,17 @@
 # script1.add(20,10)
 # script1.sub(20,10)
 
+# Output:
+# The result mul: 10
+# Called from script2
+# The result add: 30
+# The result  sub: 10
 
 ############# 2
 # import script1 
 # print(__name__)
+# #__main__
+
 
 ###########  3
 
@@ -44,6 +51,11 @@
 # if __name__=="__main__":
 #     main()
 
+#script 2
+#The result mul: 6
+##The result add: 9
+#The result  sub: -2    
+
 ################33  
 
 import sys 
@@ -63,5 +75,7 @@ def main():
 
 if __name__=="__main__":
     main()
+
+#13
 
 
